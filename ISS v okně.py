@@ -20,7 +20,7 @@ window = Tk()
 window.minsize(700, 400)
 window.resizable(False, False)
 window.title("ISS - aplikace ukazuje aktuální polohu mezinárodní vesmírné stanice")
-window.iconbitmap("C:/Users/tslac/OneDrive/Plocha/Projekty/API základy/iss.ico")
+window.iconbitmap("C:/Users/tslac/OneDrive/Plocha/Projekty/API základy/Poloha-ISS-s-API/iss.ico")
 
 # Funkce 
 def iss_coordinates():
@@ -35,7 +35,7 @@ def iss_coordinates():
 # Obrázek - Vytvoření canvasu
 canvas = Canvas(window, width=500, height=280,)
 canvas.pack()
-iss_img = PhotoImage(file="C:/Users/tslac/OneDrive/Plocha/Projekty/API základy/gif.gif")
+iss_img = PhotoImage(file="C:/Users/tslac/OneDrive/Plocha/Projekty/API základy/Poloha-ISS-s-API/gif.gif")
 canvas.create_image(0, 0, image=iss_img, anchor= "nw")
 
 # Tlačítko ve Frame 
